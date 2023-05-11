@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Países disponíveis</title>
+  </head>
+  <body>
+    <h1>Países disponíveis</h1>
+    <form action="/paises" method="post">
+    <p>nome</p>
+    <input type="text" name="nome">
+    <button type='submit'>Cadastrar Pais</button>
+</form>
+    <ul id="paises">
+      {{#each paises}}
+        <li>{{nome}}</li>
+      {{/each}}
+    </ul>
+  </body>
+</html>
+
